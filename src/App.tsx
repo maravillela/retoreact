@@ -1,6 +1,8 @@
-
+import { useState } from "react";
 
 function App() {
+  const [reactions, setReactions] = useState(6)
+
 
 
   return (
@@ -23,53 +25,130 @@ function App() {
           </div>
         </label>
         <ul tabIndex={0} className="mt-3 z-[1] menu menu-sm dropdown-content bg-primary-content text-black rounded-box w-40">
-          <li>
+          <ul>
             <a className="justify-between">
               Profile
               <span className="badge bg-primary-content border-none">✨</span>
             </a>
-          </li>
-          <li><a>Dashboard</a></li>
-          <li><a>Create Post</a></li>
-          <li><a>Reading list</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Sign Out</a></li>
+          </ul>
+          <ul><a>Dashboard</a></ul>
+          <ul><a>Create Post</a></ul>
+          <ul><a>Reading list</a></ul>
+          <ul><a>Settings</a></ul>
+          <ul><a>Sign Out</a></ul>
         </ul>
       </div>
       </div>
     </div>
-    {/*aqui empieza el aside izq*/}
+    
+    {/*aqui empieza el aside izq
     <div className="drawer sm:drawer-open">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content flex flex-col items-center justify-center">
-    {/* Page content here */}
+    {/* Page content here }
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
     <ul className="menu p-4 w-80 h-full bg-secondary-content  text-base-content">
-      {/* Sidebar content here */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      {/* Sidebar content here }
+      <ul><a>Sidebar Item 1</a></ul>
+      <ul><a>Sidebar Item 2</a></ul>
     </ul>
+  </div>
+</div> */}
+<div className=" grid grid-cols-4 gap-4 bg-white  border-slate-500">
+<div className="p-5 col-span-1 max-sm:invisible md:visible"> 
+<ul>🏠 Home</ul>
+<ul>📥 Reading List</ul>
+<ul>📜 Listing</ul>
+<ul>🎙️ Podcast</ul>
+<ul>🎥 Videos</ul>
+<ul>🏷️ Tags</ul>
+<ul>💡 FAQ</ul>
+<ul>🛍️ Forem Shop</ul>
+<ul>❤️ Sponsors</ul>
+<ul>🏳️‍🌈 About</ul>
+<ul>📯 Contact</ul>
+<ul>📖 Guides</ul>
+<ul>🤔 Software comparisons</ul>
+</div>
+
+
+<div className="col-span-2">
+<div className="card card-compact w-96 bg-primary-content shadow-xl">
+  <figure><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--hcOCFnSG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aa6g894nyxxmytztd9ta.png" alt="Shoes" /></figure>
+  <div className="card-body">
+  <div className="flex items-center">
+  <img src="https://xsgames.co/randomusers/assets/avatars/male/55.jpg" className="avatar w-8 rounded-full"></img>
+  <div>
+    <h1 className="font-bold">Andrew Alfred</h1>
+    <p className="font-light text-xs">Jul 06</p>
   </div>
 </div>
 
-{/*aside derecho */}
-<div className=" drawer-end md:drawer-open">
-  <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content">
-    {/* Page content here */}
-    <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label>
-  </div> 
-  <div className="drawer-side">
-    <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
-      {/* Sidebar content here */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-    </ul>
+    <h2 className="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+
+    <div className="card-actions space-x-14 ">
+      <div> <div className="avatar-group  -space-x-2 bg-slate-100">
+  <div className="avatar border-none  bg-slate-100">
+    <div className="w-8">
+      <img src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" />
+    </div>
+  </div>
+  <div className="avatar border-none bg-slate-100">
+    <div className="w-8">
+      <img src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" />
+    </div>
+  </div>
+  <div className="avatar border-none  bg-slate-100">
+    <div className="w-8">
+      <img src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" />
+    </div>
+  </div>
+  <div className="avatar border-none  bg-slate-100">
+    <div className="w-8">
+      <img src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" />
+    </div>
+  </div>
+  <div className="avatar border-none  bg-slate-100">
+    <div className="w-8">
+      <img src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" />
+    </div>
+  </div>
+  <div className="avatar placeholder border-none  bg-slate-100">
+    <div className="w-8 bg-primary-content text-neutral-content">
+      <span><button onClick={() => setReactions(reactions + 1)}><p>{reactions}</p></button></span>
+    </div>
+  </div>
+</div></div>
+
+
+      <button className="btn border-none bg-slate-100 justify-end hover:bg-slate-100">3 Comments</button>
+    </div>
   </div>
 </div>
+</div>
+
+<div className="col-span-1">
+<div className="card w-45 bg-base-100 shadow-xl">
+  <figure className="px-10 pt-10">
+    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div className="card-actions">
+      <button className="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
     </>
   )
 }
