@@ -75,7 +75,7 @@ function App() {
 
 
 <div className="col-span-2">
-<div className="card card-compact w-96 bg-primary-content shadow-xl">
+<div className="card card-compact w-96 bg-primary-content card-bordered shadow-xl">
   <figure><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--hcOCFnSG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aa6g894nyxxmytztd9ta.png" alt="Shoes" /></figure>
   <div className="card-body">
   <div className="flex items-center">
@@ -85,9 +85,8 @@ function App() {
     <p className="font-light text-xs">Jul 06</p>
   </div>
 </div>
-
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <h2 className="card-title text-black">React Design Patterns</h2>
+    <p>The goal with React is to create a tree of React elements and render them to the screen. The React element tree is composed of components. Then, components inevitably have a hierarchical structure. Since components have a hierarchical structure, it is natural to configure the directory structure according to the component hierarchy. </p>
 
     <div className="card-actions space-x-14 ">
       <div> <div className="avatar-group  -space-x-2 bg-slate-100">
@@ -122,33 +121,25 @@ function App() {
     </div>
   </div>
 </div></div>
-
-
-      <button className="btn border-none bg-slate-100 justify-end hover:bg-slate-100">3 Comments</button>
+      <button className="btn border-none font-light text-xs bg-slate-100 justify-end hover:bg-slate-100">
+        3 Comments</button>
     </div>
   </div>
 </div>
 </div>
 
-<div className="col-span-1">
-<div className="card w-45 bg-base-100 shadow-xl">
-  <figure className="px-10 pt-10">
-    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
-  </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+<div className="card w-50 h-80 bg-primary-content shadow-xl">
+  <figure><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--sHHbPqt4--/c_limit,f_auto,fl_progressive,q_auto,w_500/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ylq17e4fm8gfs75ur7nf.jpg" alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title text-black text-sm">Refine + DEV Hackathon</h2>
+    <p className="text-xs">If a dog chews shoes whose shoes does he choose?</p>
+    <div className="card-actions justify-end">
+      <button className="">Buy Now</button>
     </div>
   </div>
 </div>
-</div>
-
 
 </div>
-
-
     </>
   )
 }
