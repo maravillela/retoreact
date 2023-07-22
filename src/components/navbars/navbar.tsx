@@ -5,10 +5,10 @@ function App() {
 
     return (
       <>
-       <div className="navbar bg-primary-content px-12">
-    <div className="flex-1 gap-4">
+       <div className="border border-b-300 navbar bg-primary-content px-12">
+    <div className="flex-1 gap-4  border-b-slate-500">
       <a><img className="h-9 w-11" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"></img></a>
-      <input type="text" placeholder="Search..." className="input input-bordered bg-primary-content w-96 h-9 max-sm:invisible md:visible" />
+      <input type="text" placeholder="Search..." className="input input-bordered border-slate-400 bg-primary-content w-96 h-9 max-sm:invisible md:visible" />
     </div>
     <div className="flex items-center gap-2"> 
     <button className="btn btn-sm btn-outline btn-primary hover:underline">Create Post</button>
@@ -23,21 +23,23 @@ function App() {
           </div>
         </label>
         <ul tabIndex={0} className="mt-3 z-[1] menu menu-sm dropdown-content bg-primary-content text-black rounded-box w-40">
-          <li>
+          <ul>
             <a className="justify-between">
               Profile
               <span className="badge bg-primary-content border-none">✨</span>
             </a>
-          </li>
-          <li><a>Dashboard</a></li>
-          <li><a>Create Post</a></li>
-          <li><a>Reading list</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Sign Out</a></li>
+          </ul>
+          <ul><a>Dashboard</a></ul>
+          <ul><a>Create Post</a></ul>
+          <ul><a>Reading list</a></ul>
+          <ul><a>Settings</a></ul>
+          <ul><a>Sign Out</a></ul>
         </ul>
       </div>
       </div>
     </div>
+    
+
       </>
     )
   }
