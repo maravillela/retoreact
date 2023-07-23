@@ -1,3 +1,5 @@
+export default function RightSide () {
+  return (
 <div className="card card-compact w-50 h-80 bg-primary-content shadow-xl">
   <figure><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--sHHbPqt4--/c_limit,f_auto,fl_progressive,q_auto,w_500/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ylq17e4fm8gfs75ur7nf.jpg" alt="Shoes" /></figure>
   <div className="card-body">
@@ -9,3 +11,5 @@
     </div>
   </div>
 </div>
+  );
+}

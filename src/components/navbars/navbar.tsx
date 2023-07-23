@@ -1,10 +1,6 @@
 
-
-function App() {
-
-
+export default function Navbar() {
     return (
-      <>
        <div className="border border-b-300 navbar bg-primary-content px-12">
     <div className="flex-1 gap-4  border-b-slate-500">
       <a><img className="h-9 w-11" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"></img></a>
@@ -39,9 +35,6 @@ function App() {
       </div>
     </div>
     
-
-      </>
-    )
+    );
   }
   
-  export default App

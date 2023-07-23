@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-function App() {
+export default function Post() {
   const [reactions, setReactions] = useState(6)
-
-
+  const [likes, setLikes] = useState(2)
 
   return (
     <>

@@ -1,4 +1,5 @@
-<div className=" grid grid-cols-4 gap-4 pt-6 px-10 ">
+export default function LeftSide () {
+  return(
 <div className=" col-span-1 max-sm:invisible md:visible"> 
 <ul>🏠 Home</ul>
 <ul>📥 Reading List</ul>
@@ -30,4 +31,6 @@
 </div>
 </div>
 </div>
-</div>
+
+  );
+}
